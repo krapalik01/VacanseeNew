@@ -4,14 +4,14 @@ import { store } from './store/store';
 import { MantineProvider } from '@mantine/core';
 import App from './App';
 import './index.css';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter  } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
     <MantineProvider>
-      <BrowserRouter>
+      <HashRouter >
         <App />
-      </BrowserRouter>
+      </HashRouter >
     </MantineProvider>
   </Provider>
 );
