@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../store/hooks'; // свои хуки
 import { fetchVacancies } from '../store/vacanciesSlice';
 import CardVac from './CardVac';
+
 // import type { CardVacListProps } from '../types/vacancy' оставим на потом))
 
 function CardVacList() {

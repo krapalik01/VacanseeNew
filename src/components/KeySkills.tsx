@@ -17,7 +17,6 @@ function KeySkills({ skills, onChange }: KeySkillsProps) {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') addSkill();
   };
-
   return (
     <Stack p="md" w="317" style={{ background: '#fff', borderRadius: 12 }}>
       <Text fw={500} fz="md">

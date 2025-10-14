@@ -1,5 +1,5 @@
 import Search from '../components/Search';
-import CitySelect from '../components/CitySelect';
+// import CitySelect from '../components/CitySelect';
 import KeySkills from '../components/KeySkills';
 import CardVacList from '../components/CardVacList';
 
@@ -19,6 +19,7 @@ import { fetchVacancies, setCurrentPage } from '../store/vacanciesSlice';
 import { setFilter } from '../store/vacanciesSlice';
 import type { CityKey } from '../types/vacancy';
 import { useSearchParams } from 'react-router-dom';
+import CityTabs from '../components/CityTabs'
 
 function VacanciesPage() {
   const dispatch = useAppDispatch();
@@ -110,9 +111,10 @@ function VacanciesPage() {
         <Flex gap="24">
           <Stack align="center">
             <KeySkills skills={skills} onChange={handleSkillsChange} />
-            <CitySelect city={city} setCity={handleCityChange} />
+            {/* <CitySelect city={city} setCity={handleCityChange} /> */}
           </Stack>
           <Stack gap="0" style={{ width: '100%' }}>
+            <CityTabs city={city} setCity={handleCityChange}/>
             <CardVacList />
             <Flex justify="center">
               <Pagination
