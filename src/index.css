@@ -17,6 +17,6 @@ a {
   text-decoration: none;
 }
 
-.m_576c9d4 {
-  position: inherit;
+.m_576c9d4::before {
+  display: none;
 }
