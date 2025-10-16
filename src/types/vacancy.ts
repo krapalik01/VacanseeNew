@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface WorkFormat {
   id: number;
   name: string;
@@ -58,6 +60,12 @@ export interface SearchProps {
   setSearchText: (text: string) => void;
   onSearch: () => void;
 }
+
+export interface CustomNavLinkProps {
+  to: string | object;
+  children: ReactNode;
+  className?: string | ((props: { isActive: boolean }) => string);
+};
 
 export type CityKey = '' | 'Москва' | 'Санкт-Петербург';
 

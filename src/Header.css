@@ -22,14 +22,21 @@
   width: 7px;
   height: 7px;
   margin-left: 6px;
+  margin-top: 4px;
 }
 .profile {
   background-image: url('/VacanseeNew/profile.svg');
   width: 24px;
   height: 24px;
 }
-.group {
+header > a {
   gap: 2px;
   display: flex;
   align-items: center;
+  color: #0F0F10;
+  opacity: 50%;
+}
+
+.active-link {
+  opacity: 100%;
 }
